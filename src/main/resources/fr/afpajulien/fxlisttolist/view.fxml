@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.afpajulien.fxlisttolist.Controller">
+   <children>
+      <Button fx:id="btnMove" layoutX="278.0" layoutY="92.0" mnemonicParsing="false" onAction="#moveToList" text="&gt;" />
+      <Button fx:id="btnMoveAll" layoutX="274.0" layoutY="132.0" mnemonicParsing="false" onAction="#moveAllToList" text="&gt;&gt;" />
+      <Button fx:id="btnRemove" layoutX="278.0" layoutY="200.0" mnemonicParsing="false" onAction="#moveToCombo" text="&lt;" />
+      <Button fx:id="btnRemoveAll" layoutX="274.0" layoutY="241.0" mnemonicParsing="false" onAction="#moveAllToCombo" text="&lt;&lt;" />
+      <Label layoutX="117.0" layoutY="34.0" text="Source" />
+      <Label layoutX="462.0" layoutY="34.0" text="Cible" />
+      <Button fx:id="btnUp" layoutX="440.0" layoutY="330.0" mnemonicParsing="false" onAction="#moveUp" text="^" />
+      <Button fx:id="btnDown" layoutX="486.0" layoutY="330.0" mnemonicParsing="false" onAction="#moveDown" text="v" />
+      <ComboBox fx:id="cbxSource" layoutX="50.0" layoutY="80.0" onAction="#disableButton" prefHeight="25.0" prefWidth="170.0" promptText="Sélectionner un pays" />
+      <ListView fx:id="lstCible" layoutX="376.0" layoutY="80.0" onMouseClicked="#disableButton" prefHeight="226.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
